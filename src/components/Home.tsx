@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Home() {
-    return (
-      <div className="py-4">
-        Hello world
-      </div>
-    );
-  }
-  
+  const { t, i18n } = useTranslation();
+  return <div className="py-4">{t("helloWorld")}</div>;
+}
+
 export default Home;
